@@ -1,0 +1,65 @@
+const BottomToolbarShadow = {
+  shadowColor: "#000",
+  shadowOffset: {
+    width: 0,
+    height: 2,
+  },
+  shadowOpacity: 0.25,
+  shadowRadius: 3.84,
+  elevation: 5,
+};
+const BottomToolbarItemShadow = {
+  shadowColor: "#000",
+  shadowOffset: {
+    width: 0,
+    height: 2,
+  },
+  shadowOpacity: 0.1,
+  shadowRadius: 3.84,
+  elevation: 5,
+};
+export const BottomToolbarStyle = {
+  container: {
+    backgroundColor: "white",
+    width: "100%",
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingTop: 4,
+    paddingBottom: 4,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-around",
+    position: "absolute",
+    bottom: 0,
+    display: "flex",
+    flexDirection: "row",
+    ...BottomToolbarShadow,
+  },
+  item: {
+    backgroundColor: "white",
+    paddingLeft: 16,
+    paddingRight: 16,
+    height: 40,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    borderRadius: "50%",
+    ...BottomToolbarItemShadow,
+  },
+  activeItem: {
+    backgroundColor: "#ddd",
+    paddingLeft: 16,
+    paddingRight: 16,
+    height: 40,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    borderRadius: "50%",
+    ...BottomToolbarItemShadow,
+  },
+  text: {
+    color: "red",
+  },
+};
